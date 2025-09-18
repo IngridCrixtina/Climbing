@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climbling - Marketing para Empresas em Crescimento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    }
+    .btn-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+    }
+    .input-focus:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+    }
+    .floating {
+      animation: floating 6s ease-in-out infinite;
+    }
+    @keyframes floating {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<button id="backToTop" class="fixed bottom-6 right-6 bg-purple-600 text-white rounded-full p-3 shadow-lg hidden transition-opacity duration-300" title="Voltar ao topo">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+</button>
+
+
+  <script>
+    window.onscroll = function() {
+      const button = document.getElementById('backToTop');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.classList.remove('hidden');
+      } else {
+        button.classList.add('hidden');
+      }
+    };
+
+
+    document.getElementById('backToTop').onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+
+<body class="bg-white text-gray-800">
+
+
+  <header class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold">CLIMBLING</h1>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#services" class="hover:text-purple-200 transition duration-300">Serviços</a>
+          <a href="#portfolio" class="hover:text-purple-200 transition duration-300">Portfólio</a>
+          <a href="#testimonials" class="hover:text-purple-200 transition duration-300">Clientes</a>
+          <a href="contato.html" class="hover:text-purple-200 transition duration-300">Contato</a>
+          <a href="login.html" class="hover:text-purple-200 transition duration-300">Login</a>
+          <a href="register.html" class="hover:text-purple-200 transition duration-300">Cadastro</a>
+        </nav>
+        <button class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Impulsione seu negócio com estratégias de marketing eficientes</h2>
+        <p class="text-xl mb-8">Especialistas em ajudar empresas iniciantes a alcançar seu público-alvo e escalar suas operações.</p>
+        <div class="md:w-1/2 mb-10 md:mb-0">
+  <a href="contato.html" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-lg shadow-lg btn-hover transition duration-300">Começar</a>
+</div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="relative max-w-md">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b184cc4b-f6e2-47aa-96a8-44841cda065f.png" alt="Grupo de profissionais de marketing analisando dados em um escritório moderno com telas de computador mostrando gráficos de crescimento" class="rounded-lg shadow-xl floating w-full" />
+          <div class="absolute -bottom-6 -left-6 bg-purple-100 rounded-lg p-4 shadow-lg hidden md:block">
+            <p class="text-purple-800 font-semibold">+85%</p>
+            <p class="text-sm text-purple-600">de nossos clientes<br>atingem suas metas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16 text-purple-700">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">Marketing Digital</h3>
+          <p class="text-gray-600">Estratégias personalizadas para redes sociais, SEO, e publicidade online para aumentar sua visibilidade na internet.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">Análise de Mercado</h3>
+          <p class="text-gray-600">Pesquisas detalhadas para entender seu público-alvo e posicionar sua marca de forma estratégica no mercado.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">Branding</h3>
+          <p class="text-gray-600">Desenvolvimento de identidade visual e estratégias de marca para criar conexões emocionais com seus clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16 text-purple-700">O que nossos clientes dizem</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a14efb9a-a90f-4932-a1dc-bc0c6911deb3.png" alt="Retrato de Julia Mendes, empresária de 35 anos com cabelos cacheados e sorriso profissional" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h4 class="font-bold">Julia Mendes</h4>
+              <p class="text-purple-600 text-sm">CEO, Boutique Estilo</p>
+            </div>
+          </div>
+          <p class="text-gray-600">"A Climbling transformou nossa presença online. Em 3 meses, nossas vendas aumentaram 150% graças às estratégias de redes sociais que implementaram."</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/385ec8a8-42a7-4995-bfad-e98624191e75.png" alt="Retrato de Carlos Silva, empresário de tecnologia com óculos e expressão confiante" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h4 class="font-bold">Carlos Silva</h4>
+              <p class="text-purple-600 text-sm">Fundador, TechStart</p>
+            </div>
+          </div>
+          <p class="text-gray-600">"O branding criado pela Climbling nos ajudou a nos destacarmos na competitiva indústria de tecnologia. Eles entenderam exatamente nossa visão."</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md md:col-span-2 lg:col-span-1">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca32a0ef-a472-49ba-83aa-cc32f707193f.png" alt="Retrato de Ana Lúcia Souza, empresária do setor alimentício com traços maduros e expressão satisfeita" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h4 class="font-bold">Ana Lúcia Souza</h4>
+              <p class="text-purple-600 text-sm">Diretora, Sabores Naturais</p>
+            </div>
+          </div>
+          <p class="text-gray-600">"A análise de mercado provida foi fundamental para nossa expansão. Identificamos oportunidades que não conhecíamos e ajustamos nosso produto para atingir novos públicos."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="portfolio" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16 text-purple-700">Nossos Cases de Sucesso</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <div class="h-48 overflow-hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/35ac526c-c29e-4eaa-8121-6c75695cb10d.png" alt="Dashboard de marketing digital mostrando crescimento exponencial de tráfego e conversões" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Estratégia Digital para EcoModa</h3>
+            <p class="text-gray-600">Aumento de 220% nas vendas online em 6 meses.</p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <div class="h-48 overflow-hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d299aee9-e0ee-449a-a187-2da9efe3bc59.png" alt="Reunião de equipe em um escritório moderno analisando dados em telas e painéis" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Posicionamento de Marca para MedTech</h3>
+            <p class="text-gray-600">Branding completo que destacou a empresa no competitivo setor de saúde.</p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <div class="h-48 overflow-hidden">
+            <img src="data:image/jpeg;base64,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" alt="pessoa fazendo pesquisas em mercados" class="w-full h-full object-cover" />">
+            </div>
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Pesquisa de Mercado para Alimentos</h3>
+            <p class="text-gray-600">Identificação de novos segmentos que aumentaram a receita em 180%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para elevar seu negócio?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Nossa equipe está pronta para criar a estratégia perfeita para o crescimento da sua empresa.</p>
+    </div>
+  </section>
+
+
+
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">CLIMBLING</h3>
+          <p class="text-gray-400">Especialistas em marketing para empresas em fase de crescimento, ajudando você a escalar seu negócio com estratégias eficazes.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+            <li><a href="#portfolio" class="text-gray-400 hover:text-white transition duration-300">Portfólio</a></li>
+            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Depoimentos</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contato</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>ig: climblingbr</li>
+            <li>(81) 98765-4321</li>
+            <li>Av. Paulista, 1000<br>Recife - PE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>© 2025 climbling. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+     
+      const name = document.getElementById('name').value;
+      const company = document.getElementById('company').value;
+     
+      alert(`Obrigado, ${name} da ${company}! Sua solicitação foi enviada. Entraremos em contato em breve.`);
+     
+      this.reset();
+    });
+
+
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+       
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+ 
